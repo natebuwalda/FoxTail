@@ -1,0 +1,57 @@
+
+Pages
+	Gallery Pages - Just subgalleries  (Items in these sections should have rough estimates of cost for a few material types, and a link to a store page, likely on Etsy!)
+		Jewelry and Clothing
+			Headpieces (Tiaras, headdresses, hats, a picture of a coif linking to Armour)
+			Necklaces
+			Pendants
+			Bracelets and Handwear (mini-bracer of dragonscale, handflowers, picture of bracer linking to Armour)
+			Rings
+			Body
+			Belts and Skirt drapes (Skirt Drapes = something light and usually for belly dancing, that’d go over clothes)
+			Leggings and 'full' skirts (Full Skirt = .. well.. a full solid skirt, to replace clothing.)
+			Anklets and Footwear
+		Misc Items
+			Carried Items (Wallet Chains, Keychains, Watch Fobs)
+			Home Decor (Drapes for ornaments, bottles, scale skirts for candles, chainmail sculpture, etc)
+		Armour - Disclaimer about how unless specifically stated, all armor is costume grade and not armor grade, and specifically state that it not for protecting against knives, clubs, or guns!
+			Head (Coif's and the like)
+			Body ("Shirts", Hauberks, Brynies)
+			Arm and Hand (Bracers)
+			Legging
+			Feet (Unlikely to be ever be filled, unless I get crazy with some work boots and small scales)
+		Weaves - To show various weaves by themselves, name them, and help give an idea what can be custom ordered.
+			Also tuck a color example page here!
+    FAQ Page
+       Disclaimer about armor, again, - how unless specifically stated, all armor is costume grade and not armor grade, and specifically state that it not for protecting against knives, clubs, or guns!
+       Cleaning instructions for various materials and pieces
+       How custom orders are handled (and encouraged)
+       Return policies
+       Warranties (Which are likely to only be against me buggering up the initial build)
+          
+Want
+	Main page 'news' area, which would in theory interface with facebook or tumbler.
+	Some way to update either facebook or tumbler, and have it in turn put update stuff out to all the other linked social networkings.
+
+	A handy 'calculator' on the items sold, so you could (for instance) click on a necklace in byzantine weave, going to it's page, then with little effort pick 1-3 materials and the length of the piece, and get quoted a price estimate.  Note, this is -NOT- to actually be a checkout/shopping thing.  Just a way to list prices more efficiently and accurately.  (And in theory, might even let me replace my own spreadsheet calculator.)
+	Further note on that is that I'll probably need PHP for database functions.  Skip on first website version.
+
+	Social Media / Gallery interactions (which probably won’t happen for more than a few).  Incoming only for Deviant Art, SoFurry, Weasl, FurAffinity ; In/Out for Facebook/Twitter/Tumbler/Google+ (The last is looking to be not viable, due to the no-company+ pages which is still a ‘whut?’ move with Google..)
+ 
+Do Not Want
+	Sounds
+	Animations (Gifs and such)
+	Flash
+	Comment Fields
+    Frames
+    
+Random Thoughts
+	Silly idea for the 'gallery' main page.  I want to make something for pretty much everywhere.  How silly does it sound to have a person modelling as much chain jewelry as possible, and lil' expanded pictures pointing at them, leading to Headpieces, Necklaces/pendants, Bodywear, belts and skirts, foot and ankle pieces, bracelets and handwear, rings?
+	Kinda like an equipping diagram from an RPG, but prettier, with a live model?  Change it semi-regularly..  When I want to spotlight a new set of jewelry work, I shoot the model in a new set of stuff and update the 'items'.   Also allows me to feature other models!
+ 
+	Do I section off chain cuffs and collars and 'adult' body wear from the bracelets, necklaces, bras/vests?
+	I feel all the stuff belongs together, in 'per body part' sections, but.. yeah.  It won't work, because I'd lose a bunch of potential customers.  Even having an adult section will cost me a percentage.  _Those_ ones however fall under the 'Ehh, fuck 'em' category.   If 'You don't have to look' isn't good enough for them, then I won't miss 'em.
+	Need to figure out how and where to do the sectioning!
+
+ 
+
