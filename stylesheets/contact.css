@@ -1,0 +1,152 @@
+html {
+  background-color: #4a5974;
+}
+body {
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+}
+.navbar .navbar-inner {
+  border: none;
+  padding: 0px 15px 0px 15px;
+  background: rgba(10, 65, 114, 0.96);
+  background-image: -moz-linear-gradient(270deg, rgba(10, 65, 114, 0.96) 0%, rgba(3, 20, 35, 0.96) 100%);
+  background-image: -webkit-linear-gradient(270deg, rgba(10, 65, 114, 0.96) 0%, rgba(3, 20, 35, 0.96) 100%);
+  background-image: -o-linear-gradient(270deg, rgba(10, 65, 114, 0.96) 0%, rgba(3, 20, 35, 0.96) 100%);
+  background-image: linear-gradient(180deg, rgba(10, 65, 114, 0.96) 0%, rgba(3, 20, 35, 0.96) 100%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.navbar .navbar-inner .brand {
+  padding: 0px 5px 5px 5px;
+  margin: 0px;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  color: #ffd284;
+  font-family:"oswald";
+}
+.navbar .navbar-inner .brand .icon.icon-facebook-sign {
+  font-size: 25px;
+  margin: 5px 0px 0px 20px;
+  height: 25px;
+  width: 25px;
+}
+.navbar .navbar-inner .brand .icon.icon-twitter-sign {
+  margin: 5px 0px 0px 0px;
+  font-size: 25px;
+  height: 25px;
+  width: 25px;
+}
+.navbar .navbar-inner .brand .icon.icon-google-plus-sign {
+  margin: 5px 0px 0px 0px;
+  font-size: 25px;
+  height: 25px;
+  width: 25px;
+}
+.navbar .navbar-inner .brand .icon.icon-pinterest-sign {
+  margin: 5px 0px 0px 0px;
+  font-size: 25px;
+  height: 25px;
+  width: 25px;
+}
+.navbar .navbar-inner .nav li a {
+  padding: 5px;
+  margin: 2px;
+  text-shadow: 0px 1px 0px #ffd284;
+  color: #ffd284;
+  line-height: 25px;
+}
+.container.container-1 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.container-1 .row-fluid .span3 .well {
+  padding: 0px;
+  background: transparent;
+  border-radius: 0px;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  margin: 0px;
+}
+.container-1 .row-fluid .span3 .well div {
+  border-radius: 15px;
+  padding: 20px 0px 1px 0px;
+  margin: 10px 0px 10px 0px;
+  background: rgba(10, 65, 114, 0.99);
+}
+.container-1 .row-fluid .span3 .well div .image {
+  margin-bottom: 10px;
+}
+.container-1 .row-fluid .span3 .well div .nav li a {
+  padding: 5px;
+  margin: 2px 7px 2px 7px;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.container-1 .row-fluid .span9 div.div-1 {
+  background: #0a4172;
+  border-radius: 15px;
+  padding: 20px 0px 10px 0px;
+}
+.container-1 .row-fluid .span9 .div-1 .heading {
+  color: #ffffff;
+  margin: 5px;
+}
+.container-1 .row-fluid .span9 .div-1 p {
+  margin: 5px;
+  font-size: 15px;
+  color: #ffe5b8;
+  line-height: 15px;
+}
+.container-1 .row-fluid .span9 .div-1 p.p-1 {
+  padding: 2px;
+}
+.container-1 .row-fluid .span9 .div-1 form input.textinput {
+  padding: 5px;
+  background: #c0c0c0;
+  color: #151d3c;
+  margin: 5px;
+}
+.container-1 .row-fluid .span9 .div-1 form textarea {
+  padding: 5px;
+  background: #c0c0c0;
+  color: #151d3c;
+  margin: 5px;
+  height: 90px;
+}
+.container-1 .row-fluid .span9 .div-1 form .btn {
+  background: #0a4172;
+  background-image: -moz-linear-gradient(270deg, #0a4172 0%, #031423 100%);
+  background-image: -webkit-linear-gradient(270deg, #0a4172 0%, #031423 100%);
+  background-image: -o-linear-gradient(270deg, #0a4172 0%, #031423 100%);
+  background-image: linear-gradient(180deg, #0a4172 0%, #031423 100%);
+  color: #ffd284;
+  text-shadow: 0px 1px 1px rgba(255, 210, 132, 0.75);
+  margin: 5px;
+}
+.container-fluid {
+  padding: 0px 15px 0px 15px;
+  background: #031423;
+}
+.container-fluid .container .row-fluid .span12 .pull-left p {
+  padding: 5px;
+  margin: 2px;
+  font-weight: 300;
+  line-height: 14px;
+  color: #ffd284;
+}
+.container-fluid .container .row-fluid .span12 .nav {
+  margin: 0px;
+}
+.container-fluid .container .row-fluid .span12 .nav li a {
+  padding: 5px;
+  text-align: center;
+  margin: 2px;
+  color: #ffd284;
+}
