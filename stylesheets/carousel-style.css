@@ -1,10 +1,12 @@
 .slider-container {
+	position: relative;
+	display: block;
 	width: 95%;
 }
 
 #hero-slider {
 	padding: 0;
-	margin: 0px 0px 10px 40px;
+	margin: 0px 0px 0px 40px;
 	border-radius: 0;
 }
 
@@ -25,4 +27,25 @@
 
 .slider-main li {
 	float: left;
+}
+
+#hero-slider-nav {
+	padding: 0;
+	margin: 5px 0px 10px 40px;
+	border-radius: 0;
+	background: transparent;
+}
+
+.slider-nav {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 120px;
+	float: left;
+}
+
+#hero-slider-nav .slider-link {
+	display: inline-block;
+	padding: 5px 5px 0px 0px;
+	height: 90px;
 }
