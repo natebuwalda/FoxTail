@@ -1,0 +1,28 @@
+.slider-container {
+	width: 95%;
+}
+
+#hero-slider {
+	padding: 0;
+	margin: 0px 0px 10px 40px;
+	border-radius: 0;
+}
+
+.slider-main {
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+	cursor: pointer;
+}
+
+.slider-main ul {
+	width: 20000em;
+	position: absolute;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slider-main li {
+	float: left;
+}

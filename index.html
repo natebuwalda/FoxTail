@@ -16,6 +16,10 @@
     <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/main-page.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/carousel-style.css" media="screen" rel="stylesheet" type="text/css"/>
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.jcarousel.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/foxtail-carousel.js" type="text/javascript" charset="utf-8"></script>
     <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
@@ -95,7 +99,17 @@
         </span>
         <span class="span9">
           <div>
-            <a href="product.html"><img class="image" src="http://placehold.it/850x300"></a>
+            <div class="slider-container">
+			  <div id="hero-slider" class="slider-main">
+			    <ul>
+				  <li><img src="http://placehold.it/850x300" alt="Gray placeholder" /></li>
+				  <li><img src="http://placehold.it/850x300/ff0000/ffffff" alt="Red placeholder" /></li>
+				  <li><img src="http://placehold.it/850x300/00ff00/ffffff" alt="Green placeholder" /></li>
+				  <li><img src="http://placehold.it/850x300/0000ff/ffffff" alt="Blue placeholder" /></li>
+				  <li><img src="http://placehold.it/850x300/ffff00/000000" alt="Yellow placeholder" /></li>
+			    </ul>
+			  </div>
+			</div> 
             <h1 class="heading">Heading</h1>
             <p>&nbsp; _-Example words, words, words, words, words, words, words, words, and more words-_.
               <br>&nbsp;
