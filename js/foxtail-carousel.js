@@ -12,6 +12,7 @@ $(function() {
 
 function initCallback(event) {
 	$('.slider-main').hover(stopAutoScroll, startAutoScroll);
+	$('.slider-link').click(scrollToImage);
 }
 
 function stopAutoScroll() {
@@ -20,4 +21,9 @@ function stopAutoScroll() {
 
 function startAutoScroll() {
 	$('.slider-main').jcarouselAutoscroll('start');
+}
+
+function scrollToImage() {
+	$('.slider-main').jcarouselAutoscroll('stop');
+	$('.slider-main').jcarousel('scroll', $(this).data('rel'));
 }
