@@ -16,26 +16,74 @@
     <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/main-page.css" media="screen" rel="stylesheet" type="text/css" />
+	<!--
 	<link href="stylesheets/carousel-style.css" media="screen" rel="stylesheet" type="text/css"/>
 	<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jquery.jcarousel.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/foxtail-carousel.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/foxtail-carousel.js" type="text/javascript" charset="utf-8"></script> 
+	-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="carousel/carousel.min.js"></script>
+<link rel="stylesheet" href="carousel/carousel.css" type="text/css" />
     <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 -->
-    <title>Main Page</title>
+<style type="text/css">
+
+/* Height setting is required. The Plugin won't determine this */
+.carousel img { height:480px; width:100%; }
+.carousel-wrapper.vertical { width: 125px; }
+
+
+
+/* When in wrap mode other special elements need to be provided... */
+#withWrap li>div { float: left; margin:0 4px 4px 0; } 
+#withWrap .carousel { height:137px; }
+#withWrap .pages { bottom:0; }
+
+/* When no-wrap is setup there are some other special things we want... */
+.pages, .horizontal .playPause { bottom:0;  }
+#noWrap .vertical .playPause { bottom:28px; }
+
+/* This is to make the demo purdy */
+.seperator { margin:0 0 15px; }
+  
+</style>
+<script type="text/javascript">
+/*========================
+Demo Usage
+========================*/
+$(document).ready(function() {
+	$('#noWrap').carousel({
+		direction: 'ltr',
+		mode: 'auto',
+		//wrap: 'none',
+		transition: 'slide',
+		maskSize: 490,
+		makePagination: true,
+		makePlayPause: true,
+		show: 1,
+		step: 1
+		//buffer: false
+	}, function() {
+		console.group('No Wrap Carousel');
+		console.log('This callback will wait for ALL MATCHED ELMENTS to complete, including their image assesets.');
+		console.groupEnd()
+	});
+});
+</script>
+
+    <title>Foxtail Artisanry</title>
   </head>
   
   <body>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <a class="brand" href="index.html">Foxtail Artisanry</a>  
-			<a class="brand" href="#"><img src="images/zzicon-facebook.png"></a>  
-			<a class="brand" href="#"><img src="images/zzicon-twitter.png"></a>  
-			<a class="brand" href="#"><img src="images/zzicon-tumblr.png"></a>  
-			<a class="brand" href="#"><img src="images/zzicon-path.png"></a>  
-			<a class="brand" href="#"><img src="images/zzicon-stumbleupon.png"></a>  
-			<a class="brand" href="#"><img src="images/zzicon-google.png"></a>  
+			<a class="brand" href="https://www.facebook.com/foxtail.artisanry"><img src="images/zzicon-facebook.png"></a>  
+			<a class="brand" href="https://twitter.com/FoxtailArtisan"><img src="images/zzicon-twitter.png"></a>  
+			<a class="brand" href="http://foxtail-artisanry.tumblr.com/"><img src="images/zzicon-tumblr.png"></a>  
+			<a class="brand" href="https://pinterest.com/FoxtailArtisan/"><img src="images/zzicon-path.png"></a>  
 		</a>
         <ul class="nav pull-right">
           <li>
@@ -105,7 +153,8 @@
         </span>
         <span class="span9">
           <div>
-            <div class="slider-container">
+            <!--
+			<div class="slider-container">
 			  <div id="hero-slider" class="slider-main">
 			    <ul>
 				  <li><img src="http://placehold.it/850x300" alt="Gray placeholder" /></li>
@@ -132,8 +181,24 @@
 					  <a href="#"><img src="http://placehold.it/150x100/ffff00/000000" alt="thumb 5" /></a>
 				  </div>
 				</div
-			</div> 
-            <h1 class="heading">Heading</h1>
+			</div>
+			-->
+
+			<div class="seperator">
+				<div id="noWrap">
+					<ul>
+						<li><img src="images/gallery/Hackeysack-Alum-01-g.png" /></li>
+						<li><img src="images/gallery/Hackeysack-Alum-02-g.png" /></li>
+						<li><img src="images/gallery/Hackeysack-Alum-03-g.png" /></li>
+						<li><img src="images/gallery/Hackeysack-Steel-01-g.png" /></li>
+						<li><img src="images/gallery/Hackeysack-Steel-02-g.png" /></li>
+						<li><img src="images/gallery/Hackeysack-Steel-03-g.png" /></li>
+						<!--<li><img src="images/demo/images_015.jpg" /></li>--> <!-- Known bug : Pager breaks with certain numbers. -->
+					</ul>
+				</div>
+			</div>
+
+			<h1 class="heading">Heading</h1>
             <p>&nbsp; _-Example words, words, words, words, words, words, words, words, and more words-_.
               <br>&nbsp;
               <br>&nbsp; Welcome to the home of Foxtail Artisanry.&nbsp; Most of the gallery of items shown will list estimated prices, and send you to Etsy pages if I have pieces of that type in stock.&nbsp; Unless otherwise noted, everything in the Gallery can be ordered
@@ -153,8 +218,7 @@
               <div class="div-1">
                 <h2 class="heading">News</h2>
                 <p class="p-2 p-3">The news and updates!&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp;</p>
-                <a href="product.html"><img class="pull-center image" src="images/dualspiral.png"></a>
-					<!-- THIS is NOT a divider image, but a placeholder for a product image.  ^_^ -->
+                <a href="product.html"><img class="pull-center image" src="images/gallery/Bracelet-GSG-01-g.png"></a>
                 <p class="p-2 p-3">The news and updates!&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp;</p>
               </div>
             </span>
@@ -164,8 +228,7 @@
           <div class="div-1">
             <h2 class="heading">Sales</h2>
             <p class="p-2 p-3">The sale items!&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp;</p>
-            <a href="product.html"><img class="pull-center image" src="images/dualspiral.png"></a>
-				<!-- THIS is NOT a divider image, but a placeholder for a product image.  ^_^ -->
+            <a href="product.html"><img class="pull-center image" src="images/gallery/Bracelet-Mobius-Flower-01-g.png"></a>
             <p class="p-2 p-3">The sale items!&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp; Lorem Ipsum...&nbsp;</p>
           </div>
         </span>
