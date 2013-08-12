@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
     <style>
       /* No content under the fixed bootstrap header. */
@@ -16,63 +16,13 @@
     <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/main-page.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/flexslider.css" media="screen" rel="stylesheet" type="text/css" />
 	<!--
 	<link href="stylesheets/carousel-style.css" media="screen" rel="stylesheet" type="text/css"/>
+    -->
 	<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/jquery.jcarousel.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/foxtail-carousel.js" type="text/javascript" charset="utf-8"></script> 
-	-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="carousel/carousel.min.js"></script>
-<link rel="stylesheet" href="carousel/carousel.css" type="text/css" />
-    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
--->
-<style type="text/css">
-
-/* Height setting is required. The Plugin won't determine this */
-.carousel img { height:368px; width:100%; }
-.carousel-wrapper.vertical { width: 125px; }
-
-
-
-/* When in wrap mode other special elements need to be provided... */
-#withWrap li>div { float: left; margin:0 4px 4px 0; } 
-#withWrap .carousel { height:137px; }
-#withWrap .pages { bottom:0; }
-
-/* When no-wrap is setup there are some other special things we want... */
-.pages, .horizontal .playPause { bottom:0;  }
-#noWrap .vertical .playPause { bottom:28px; }
-
-/* This is to make the demo purdy */
-.seperator { margin:0 0 15px; }
-  
-</style>
-<script type="text/javascript">
-/*========================
-Demo Usage
-========================*/
-$(document).ready(function() {
-	$('#noWrap').carousel({
-		direction: 'ltr',
-		duration: 5000,
-		mode: 'auto',
-		//wrap: 'none',
-		transition: 'slide',
-		maskSize: 490,
-		makePagination: true,
-		makePlayPause: true,
-		show: 1,
-		step: 1
-		//buffer: false
-	}, function() {
-		console.group('No Wrap Carousel');
-		console.log('This callback will wait for ALL MATCHED ELMENTS to complete, including their image assesets.');
-		console.groupEnd()
-	});
-});
-</script>
 
     <title>Foxtail Artisanry</title>
   </head>
@@ -153,49 +103,14 @@ $(document).ready(function() {
           </div>
         </span>
         <span class="span9">
-          <div>
-            <!--
-			<div class="slider-container">
-			  <div id="hero-slider" class="slider-main">
-			    <ul>
-				  <li><img src="http://placehold.it/850x300" alt="Gray placeholder" /></li>
-				  <li><img src="http://placehold.it/850x300/ff0000/ffffff" alt="Red placeholder" /></li>
-				  <li><img src="http://placehold.it/850x300/00ff00/ffffff" alt="Green placeholder" /></li>
-				  <li><img src="http://placehold.it/850x300/0000ff/ffffff" alt="Blue placeholder" /></li>
-				  <li><img src="http://placehold.it/850x300/ffff00/000000" alt="Yellow placeholder" /></li>
-			    </ul>
-			  </div>
-			  <div id="hero-slider-nav" class="slider-nav">
-				  <div class="slider-link" data-rel="0">
-					  <a href="#"><img src="http://placehold.it/150x100" alt="thumb 1" /></a>
-				  </div>
-				  <div class="slider-link" data-rel="1">
-					  <a href="#"><img src="http://placehold.it/150x100/ff0000/ffffff" alt="thumb 2" /></a>
-				  </div>
-			      <div class="slider-link" data-rel="2">
-					  <a href="#"><img src="http://placehold.it/150x100/00ff00/ffffff" alt="thumb 3" /></a>
-				  </div>
-				  <div class="slider-link" data-rel="3">
-					  <a href="#"><img src="http://placehold.it/150x100/0000ff/ffffff" alt="thumb 4" /></a>
-				  </div>
-				  <div class="slider-link" data-rel="4">
-					  <a href="#"><img src="http://placehold.it/150x100/ffff00/000000" alt="thumb 5" /></a>
-				  </div>
-				</div
-			</div>
-			-->
-
-			<div class="seperator">
-				<div id="noWrap">
-					<ul>
-						<li><a href="products/Color-Example-Chain.html"><img src="images/carousel/Color-Example-Chain-01-c.jpg"/></a></li>
-						<li><a href="products/Bracelet-Mobius-Flower.html"><img src="images/carousel/Bracelet-Mobius-Flower-01-c.jpg"/></a></li>
-						<li><a href="products/Bag-Medium.html"><img src="images/carousel/Bag-Dicebag-05-c.jpg"/></a></li>
-						<!--<li><img src="images/demo/images_015.jpg" /></li>--> <!-- Known bug : Pager breaks with certain numbers. -->
-					</ul>
-				</div>
-			</div>
-
+		  <div class="flexslider" style="border: none; padding: 10px 5px 1px 5px;">
+			<ul class="slides">
+				<li><a href="products/Color-Example-Chain.html"><img src="images/carousel/Color-Example-Chain-01-c.jpg"/></a></li>
+				<li><a href="products/Bracelet-Mobius-Flower.html"><img src="images/carousel/Bracelet-Mobius-Flower-01-c.jpg"/></a></li>
+				<li><a href="products/Bag-Medium.html"><img src="images/carousel/Bag-Dicebag-05-c.jpg"/></a></li>
+			</ul>
+		  </div>
+		  <div>
 			<h1 class="heading">Please excuse the mess!</h1>
             <p>&nbsp; This website is far from 'live' and ready, but enough people wanted to see how it's coming, as well as the jewelry being worked on, so here it is, in it's unfinished incarnation!</p>
             <p>&nbsp; </p>
