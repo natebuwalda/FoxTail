@@ -10,10 +10,15 @@ Misc Notes
 	http://flexslider.woothemes.com/index.html
 	-- Initial implementation done.  Need to make it pretty.
 	
+	
 Main Page (.\index.html)
 	Either..
 		Need to remove the big gap between top of page and image carousel.
 		-- reduced top gap from 60 px to 35 px.
+		== Lovely!  Now if we can match that gap on the bottom, at least as far as the image itself is concerned, ending up with the dot's in that gap..
+		  And on further thought, image should -either- be rounded both top and bottom (more ideal to me, to match the rest of the design style), or sharp edged on both (consistancy!).  Whatever's more viable, as it's not a 'must' for either.
+		  Fixing displayed height for next/previous buttons is a good thing too.  And yess, I know you probably noticed all this, but you urge me to be thorough.
+
 	Image carousel
 	-- Added flexslider
 		
