@@ -1,5 +1,7 @@
 $(window).load(function() {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+	prevText: "Prev",
+	nextText: "Next"
   });
 });

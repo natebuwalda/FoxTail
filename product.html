@@ -15,9 +15,11 @@
     <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="stylesheets/product-page.css" media="screen" rel="stylesheet" type="text/css" />
-    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <link href="stylesheets/main-page.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/flexslider.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/foxtail-carousel.js" type="text/javascript" charset="utf-8"></script> 
 -->
     <title>Foxtail Artisanry - Product Page</title>
   </head>
@@ -98,18 +100,27 @@
           </div>
         </span>
         <span class="span9">
+		  <div class="flexslider" style="border: none; padding: 10px 5px 1px 5px;">
+			<ul class="slides">
+				<li><a href="products/Color-Example-Chain.html"><img src="images/Color-Example-Chain-01.jpg"/></a></li>
+				<li><a href="products/Bracelet-HP4-in-1.html"><img src="images/Bracelet-HP4-in-1-01.jpg"/></a></li>
+				<li><a href="products/Bracelet-Mobius-Flower.html"><img src="images/Bracelet-Mobius-Flower-01.jpg"/></a></li>
+				<li><a href="products/Bag-Medium.html"><img src="images/Bag-Dicebag-05.jpg"/></a></li>
+			</ul>
+		  </div>
           <div class="div-1">
-            <img class="pull-center image" src="http://placehold.it/900x600">
-            <h1 class="heading">Heading</h1>
-            <p class="p-1">&nbsp; _-Example words, words, words, words, words, words, words, words, and more words-_.
-              <br>&nbsp;
-              <br>&nbsp; Welcome to the home of Foxtail Artisanry.&nbsp; Most of the gallery of items shown will list estimated prices, and send you to Etsy pages if I have pieces of that type in stock.&nbsp; Unless otherwise noted, everything in the Gallery can be ordered
-              and made specifically for you, just contact us!</p>
-            <p class="p-1">&nbsp; _-Example words, words, words, words, words, words, words, words, and more words-_.</p>
-            <p class="p-1">&nbsp;</p>
-            <p class="p-2"><strike>Normal Price - $??.??</strike>
-            </p>
-            <p class="p-2">Current Price - $??.??</p>
+			<div>
+				<h1 class="heading">Heading</h1>
+				<p class="p-1">&nbsp; _-Example words, words, words, words, words, words, words, words, and more words-_.
+				  <br>&nbsp;
+				  <br>&nbsp; Welcome to the home of Foxtail Artisanry.&nbsp; Most of the gallery of items shown will list estimated prices, and send you to Etsy pages if I have pieces of that type in stock.&nbsp; Unless otherwise noted, everything in the Gallery can be ordered
+				  and made specifically for you, just contact us!</p>
+				<p class="p-1">&nbsp; _-Example words, words, words, words, words, words, words, words, and more words-_.</p>
+				<p class="p-1">&nbsp;</p>
+				<p class="p-2"><strike>Normal Price - $??.??</strike>
+				</p>
+				<p class="p-2">Current Price - $??.??</p>
+			</div>
             <div class="row-fluid">
               <span class="span6">
                 <a class="dom-link dom-link-1" href="#">Link to current Etsy stock</a>
