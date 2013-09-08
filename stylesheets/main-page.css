@@ -169,3 +169,7 @@ body {
   margin: 2px;
   color: #ffd284;
 }
+
+.flexslider-controls ol {
+	bottom: 10px;
+}
