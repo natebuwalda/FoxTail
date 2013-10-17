@@ -1,3 +1,11 @@
+Update to do
+Add HP4-in-1 with tigereye drop picture.
+Add HP4-in-1 for Dallas type picture.
+Figure out a way to snapshot the scales, add picture to weaves.
+
+Section off bracelets from necklaces, make mention that 'just because the section is called bracelets, doesn't mean it can't be made slightly longer as an anklet!'.
+
+
 
 Pages
 	Gallery Pages - Just subgalleries  (Items in these sections should have rough estimates of cost for a few material types, and a link to a store page, likely on Etsy!)
@@ -9,7 +17,7 @@ Pages
 			Rings
 			Body
 			Belts and Skirt drapes (Skirt Drapes = something light and usually for belly dancing, that’d go over clothes)
-			Leggings and 'full' skirts (Full Skirt = .. well.. a full solid skirt, to replace clothing.)
+			Leggings and 'full' skirts (Full Skirt = .. well.. a full solid skirt, to replace clothing.  Really, wouldn't this be armour?)
 			Anklets and Footwear
 		Misc Items
 			Carried Items (Wallet Chains, Keychains, Watch Fobs)
