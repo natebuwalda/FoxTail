@@ -41,6 +41,14 @@ Contact Page (./contact.html)
     It'd be nice to have a captcha code setup to help cut down on easy spamming through the email form itself.  It may seem silly when you could just copy-paste the email address (which will be posted still) and spam it directly, but that doesn't cause workload on the system with a looping click'n'send script, soo.. It just seems like a good idea.
   Nitpicking
     An ability to toggle the captcha usage on and off, so it's there if we need it, but kept off till someone misbehaves.
+	Figure out why the darn top of the 'main text' areas aren't aligned with the side navigation menu, when it's proper on all other pages.
+
+------------------------
+About Page (./about.html)
+  Need
+  Want
+  Nitpicking
+	Figure out why the darn top of the 'main text' areas aren't aligned with the side navigation menu, when it's proper on all other pages.
 
 ------------------------
 Misc Pages
