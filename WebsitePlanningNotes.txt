@@ -1,10 +1,10 @@
-Update to do
-Add HP4-in-1 with tigereye drop picture.
-Add HP4-in-1 for Dallas type picture.
-Figure out a way to snapshot the scales, add picture to weaves.
+This is mostly my rambling notes to myself, more than to anyone helping.
+------- OLD And Outdated ------ Ignore this! ------
+------- OLD And Outdated ------ Ignore this! ------
+------- OLD And Outdated ------ Ignore this! ------
+
 
 Section off bracelets from necklaces, make mention that 'just because the section is called bracelets, doesn't mean it can't be made slightly longer as an anklet!'.
-
 
 
 Pages
@@ -38,9 +38,6 @@ Pages
        Warranties (Which are likely to only be against me buggering up the initial build)
           
 Want
-	Main page 'news' area, which would in theory interface with facebook or tumbler.
-	Some way to update either facebook or tumbler, and have it in turn put update stuff out to all the other linked social networkings.
-
 	A handy 'calculator' on the items sold, so you could (for instance) click on a necklace in byzantine weave, going to it's page, then with little effort pick 1-3 materials and the length of the piece, and get quoted a price estimate.  Note, this is -NOT- to actually be a checkout/shopping thing.  Just a way to list prices more efficiently and accurately.  (And in theory, might even let me replace my own spreadsheet calculator.)
 	Further note on that is that I'll probably need PHP for database functions.  Skip on first website version.
 
