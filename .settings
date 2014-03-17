@@ -1,5 +1,7 @@
 [editor]
 ; enter your editor preferences here...
+tab_size = 2
+show_trailing_space = true
 
 [code-beautifier]
 ; enter your code-beautifier preferences here...
