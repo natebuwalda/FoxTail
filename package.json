@@ -1,0 +1,31 @@
+{
+  "name": "foxtail-artisanry",
+  "version": "2.0.0-beta",
+  "description": "Foxtail Artisanry Website & Back-end Tools",
+  "main": "app/foxtail.js",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.13",
+    "grunt-compile-handlebars": "~0.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/natebuwalda/FoxTail.git"
+  },
+  "keywords": [
+    "foxtail",
+    "artisanry",
+    "website",
+    "tools"
+  ],
+  "author": "H. Arnold Jones <github-commits@cfxmusic.com>",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://github.com/natebuwalda/FoxTail/issues"
+  },
+  "homepage": "https://github.com/natebuwalda/FoxTail"
+}
