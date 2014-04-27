@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foxtail Artisanry</title>
+
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type=" text/css" /> -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" media="screen" type="text/css" />
+  <!-- <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Lato|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/flexslider.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <style>
+    body {
+      padding-top: 60px;
+      /* No content under the fixed bootstrap header. */
+      font-family:"Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #4a5974;
+      font-size: 15px;
+      font-weight: 300;
+    }
+    .navbar {
+      min-height: 40px;
+      background-image: linear-gradient(180deg, rgba(10, 65, 114, 0.96) 0%, rgba(3, 20, 35, 0.96) 100%);
+      color: #ffd284;
+      /*font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+      /*font-weight: lighter;*/
+    }
+    .navbar img {
+      margin-left: 0.25em;
+      vertical-align: inherit;
+    }
+    .navbar-nav>li>a {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      line-height: 40px;
+      color: #ffd284;
+      /*text-shadow: 0px 1px 0px #ffd284;*/
+      /*font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+      font-weight: lighter;
+      /*float: right;*/
+      float: left;
+    }
+    .nav>li:last-child {
+      padding-right: 15px;
+    }
+    .well {
+      border: none;
+      padding: 0;
+    }
+    #brand {
+      font-family:"oswald";
+      color: #ffd284;
+      font-size: 24px;
+      text-shadow: none;
+      line-height: 40px;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+    #logo {
+      margin-bottom: 1em;
+    }
+    .dkblue {
+      border-color: rgba(10, 65, 114, 0.99);
+      background-color: rgba(10, 65, 114, 0.99);
+      box-shadow: 3px 3px 10px black;
+    }
+    .flexslider {
+      padding-top: 1em;
+      padding-bottom: 50px;
+      margin-bottom: 0px;
+    }
+    .flex-control-nav {
+      bottom: 6px;
+    }
+    .leftnav a {
+      border-radius: 5px;
+      font-size: 20px;
+      color: #fff;
+    }
+    .leftnav>li>a {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      vertical-align: middle;
+    }
+    .leftnav>li:last-child {
+      padding-bottom: 10px;
+    }
+    .nav>li>a:hover, .nav>li>a:focus {
+      background-color: #031423;
+    }
+    .r15 {
+      border-radius: 15px;
+    }
+    .first-blob {
+      color: #ffe5b8;
+      margin-top: 0em;
+      padding: 20px;
+    }
+    .blob {
+      color: #ffe5b8;
+      margin-top: 2em;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #ffffff;
+      border-bottom: 1px solid black;
+      margin-top: 0;
+    }
+    .footer {
+      font-family:"Source Sans Pro";
+      color: #FFD285;
+      margin-top: 2em;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #031423;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <a id="brand" href="index.html">Foxtail Artisanry</a> 
+      <a href="https://www.facebook.com/foxtail.artisanry">
+        <img src="images/zzicon-facebook.png">
+      </a>
+      <a href="https://twitter.com/FoxtailArtisan">
+        <img src="images/zzicon-twitter.png">
+      </a>
+      <a href="http://foxtail-artisanry.tumblr.com/">
+        <img src="images/zzicon-tumblr.png">
+      </a>
+      <a href="https://pinterest.com/FoxtailArtisan/">
+        <img src="images/zzicon-path.png">
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#dropdaen" style="margin: 0; vertical-align: middle;">
+        <span>Toggle Menu</span><i class="fa fa-arrow-circle-down" style="margin-left: 5px;"></i>
+      </button>
+    </div>
+    <div class="container-fluid">
+      <ul id="dropdaen" class="collapse navbar-collapse nav navbar-nav navbar-right">
+        <li>
+          <a href="gallery.html">Jewelry</a>
+        </li>
+        <li>
+          <a href="gallery.html">Misc</a>
+        </li>
+        <li>
+          <a href="gallery-weaves.html">Weaves</a>
+        </li>
+        <li>
+          <a href="gallery.html">Armour</a>
+        </li>
+        <li>
+          <a href="faq.html">FAQ</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="http://www.etsy.com/shop/FoxtailArtisanry">Etsy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-3">
+        <div class="well dkblue r15">
+          <div>
+            <a href="index.html">
+              <img id="logo" class="img-responsive center-block" src="images/foxtail-logo-color.png">
+            </a>
+            <ul class="nav leftnav">
+              <li>
+                <a href="index.html">Main Page</a>
+              </li>
+              <li>
+                <a href="gallery.html">Jewelry &amp; Clothing</a>
+              </li>
+              <li>
+                <a href="gallery.html">Misc Items</a>
+              </li>
+              <li>
+                <a href="gallery-weaves.html">Weaves</a>
+              </li>
+              <li>
+                <a href="gallery.html">Armour</a>
+              </li>
+              <li>
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li>
+                <a href="about.html">About</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="http://www.etsy.com/shop/FoxtailArtisanry">Etsy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
