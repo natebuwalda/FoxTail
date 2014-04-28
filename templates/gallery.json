@@ -54,53 +54,53 @@
 			"img": "images/gallery/Bracelet-Dragonscale-01-g.jpg",
 			"price": "$30.00"
 		}],
-		[{"title": "third to last row 1 of 3 (bracelet full persian...)",
-			"link": "products/Bracelet-HP3-in-1.html",
-			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-HP3-in-1-01-g.jpg",
-			"price": "$15.00"
+		[{"title": "Bracelet - Full Persian",
+			"link": "products/Bracelet-Full-Persian.html",
+			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp, pictured in copper and bronze.",
+			"img": "images/gallery/Bracelet-Full-Persian-01-g.jpg",
+			"price": "$20.00"
 		}, 
-		{"title": "third to last row 2 of 3",
-			"link": "products/Bracelet-HP4-in-1.html",
-			"desc": "A much tighter weave than Half Persian 3-in-1, it holds it's shape nicely at all times.  Two colors, 14g AWG/1.6mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-HP4-in-1-01-g.jpg",
-			"price": "$15.00"
+		{"title": "Bracelet - Mars",
+			"link": "products/Bracelet-Mars.html",
+			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp, pictured in copper and brass.",
+			"img": "images/gallery/Bracelet-Mars-01-g.jpg",
+			"price": "$20.00"
 		},
-		{"title": "third to last row 3 of 3",
-			"link": "products/Bracelet-Mobius-Flower.html",
-			"desc": "Mobius flowers are done in one or two colors per flower, then another color for connectors.  Additional flower colors cost extra.  14g AWG/1.6mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-Mobius-Flower-01-g.png",
-			"price": "$15.00"
+		{"title": "Bracelet - Dragonsteps",
+			"link": "products/Bracelet-Dragonsteps.html",
+			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp, pictured in aluminium and bronze.",
+			"img": "images/gallery/Bracelet-Dragonsteps-01-g.jpg",
+			"price": "$20.00"
 		}],
-		[{"title": "second to last row 1 of 3",
-			"link": "products/Bracelet-HP3-in-1.html",
-			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-HP3-in-1-01-g.jpg",
-			"price": "$15.00"
+		[{"title": "Bracelet - Celtic Spiral Knot",
+			"link": "products/Bracelet-Celtic-Spiral-Knot.html",
+			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp, pictured in aluminium and bronze.",
+			"img": "images/gallery/Bracelet-CelticSpiralKnot-01-g.jpg",
+			"price": "$20.00"
 		}, 
-		{"title": "second to last row 2 of 3",
-			"link": "products/Bracelet-HP4-in-1.html",
-			"desc": "A much tighter weave than Half Persian 3-in-1, it holds it's shape nicely at all times.  Two colors, 14g AWG/1.6mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-HP4-in-1-01-g.jpg",
-			"price": "$15.00"
+		{"title": "Bracelet - Elfin",
+			"link": "products/Bracelet-Elfin.html",
+			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp, pictured in aluminium and bronze.",
+			"img": "images/gallery/Bracelet-Elfin-01-g.jpg",
+			"price": "$20.00"
 		},
-		{"title": "second to last row 3 of 3",
-			"link": "products/Bracelet-Mobius-Flower.html",
-			"desc": "Mobius flowers are done in one or two colors per flower, then another color for connectors.  Additional flower colors cost extra.  14g AWG/1.6mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-Mobius-Flower-01-g.png",
-			"price": "$15.00"
+		{"title": "Bracelet - Elfweave",
+			"link": "products/Bracelet-Elfweave.html",
+			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp, pictured in aluminium and bronze.",
+			"img": "images/gallery/Bracelet-Elfweave-01-g.jpg",
+			"price": "$30.00"
 		}],
-		[{"title": "last row 1 of 2",
-			"link": "products/Bracelet-HP3-in-1.html",
-			"desc": "Two colors, 16g AWG/1.2mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-HP3-in-1-01-g.jpg",
-			"price": "$15.00"
+		[{"title": "Necklace - Byzantine and Mobius Flower",
+			"link": "products/Necklace-Byzantine-and-Mobius-Flower.html",
+			"desc": "Custom commission.  16g AWG/1.2mm rings for most, 14g AWG/1.6mm rings for the Mobius flower sections.",
+			"img": "images/gallery/Necklace-Byzantine-and-Mobius-Flower-01-g.jpg",
+			"price": "$65.00"
 		}, 
-		{"title": "last row 2 of 2",
-			"link": "products/Bracelet-HP4-in-1.html",
-			"desc": "A much tighter weave than Half Persian 3-in-1, it holds it's shape nicely at all times.  Two colors, 14g AWG/1.6mm rings, lobster claw clasp.",
-			"img": "images/gallery/Bracelet-HP4-in-1-01-g.jpg",
-			"price": "$15.00"
+		{"title": "Keychain - Full Persian with Mobius Flower",
+			"link": "Keychain-Full-Persian.html",
+			"desc": "A keychain, pictured above in plain aluminium, this can also be made in stainless steel as well as the base metals. 14g AWG/1.6mm rings, single color.",
+			"img": "images/gallery/Keychain-Full-Persian-01-g.jpg",
+			"price": "$5.00"
 		}]
 	]
 }
