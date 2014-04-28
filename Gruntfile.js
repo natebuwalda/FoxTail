@@ -4,13 +4,26 @@ module.exports = function(grunt) {
     'compile-handlebars': {
       buildStatic: {
         template: 'templates/*.html',
-        templateData: 'templates/empty.json',
+        templateData: 'templates/*.json',
         output: 'htdocs/*.html',
         //helpers: 'test/helpers/**/*.js',
         partials: 'partials/*.html'
       } 
+    },
+    'watch': {
+      templates: {
+        files: ['templates/*.html'],
+        tasks: ['compile-handlebars'],
+        options: { spawn: false }
+      },
+      json: {
+        files: ['templates/*.json'],
+        tasks: ['compile-handlebars'],
+        options: { spawn: false }
+      }
     }
   });
   grunt.loadNpmTasks('grunt-compile-handlebars');
-  grunt.registerTask('default',['compile-handlebars']);
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.registerTask('default',['watch']);
 };
