@@ -16,6 +16,7 @@ local.properties
 .settings/
 .loadpath
 htdocs/
+node_modules/
 
 # External tool builders
 .externalToolBuilders/
