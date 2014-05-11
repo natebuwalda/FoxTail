@@ -1,0 +1,44 @@
+<style>
+.pew {
+  opacity:1;
+}
+.pew.ng-enter {
+  transition: 0.1s linear all;
+}
+.pew.ng-enter {
+  opacity:0;
+}
+.pew.ng-enter-active {
+  opacity:1;
+}
+
+.pew.ng-enter-stagger {
+  transition-delay: 0.05s;
+  transition-duration: 0s;
+}
+
+</style>
+<div class="col-xs-12 col-md-9 dkblue first-blob r15 pull-right">
+  <h2>The Temporary Conglomerated Gallery</h2>
+  <p>Welcome to the home of Foxtail Artisanry.Most of the gallery of items shown will list estimated prices, and send you to Etsy pages if I have pieces of that type in stock.Unless otherwise noted, everything in the Gallery can be ordered and made specifically for you, just contact us.</p>
+  <p>Costs listed are for custom orders, as opposed to premade things for sale.  As such, premade versions on Etsy are likely to be cheaper.</p>
+  <p>For note.  Base prices here typically are for Anodized Aluminium or Bronze, Copper, and Brass rings.  Custom orders of Plain Bright Aluminium will likely be less, while Stainless Steel, Titanium, Niobium, Silver, and Gold all cost distinctly more.  Changes in ring size will also affect price.  Changes of clasps usually won't however, and it's important to have the kind of closure you want, as opposed to one you'll dislike and lead to you rarely wearing the piece made for you.</p>
+  <p>Please excuse the mess while we work to get things 'proper and professional' looking!  Quite a lot of the pictures here likely will be reshot to get a standardized image size together, and thusly straighten up the gallery.</p>
+
+<!--   <div class="col-xs-12 col-md-3 dkblue item col-xs-height pew" ng-repeat-start="rows in products"><hr>{{rows}}</div>huff<div ng-repeat-end></div> -->
+  <div class="container-responsive container-xs-height">
+    <div class="row row-xs-height pew" ng-repeat-start="rows in products | partition:3">
+       <div class="col-xs-12 col-md-3 dkblue item col-xs-height" ng-repeat-start="product in rows">
+          <a href="{{product.link}}"><img class="img-responsive" src="{{product.img}}"></a>
+          <a href="{{product.link}}">{{product.title}}</a>
+          <p><em>{{product.img}}</em></p>
+          <p>&nbsp;</p>
+          <p class="price">{{product.price}}</p>    
+      </div>
+      <div class="col-md-1" ng-repeat-end>&nbsp;</div>
+    </div>
+    <div ng-repeat-end>&nbsp;</div>
+  
+  </div>
+
+</div> <!-- gallery -->

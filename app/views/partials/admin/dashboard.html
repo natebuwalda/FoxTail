@@ -1,0 +1,16 @@
+<div ng-include="'partials/navbar.html'"></div>
+<style>
+.row { color: white; }
+</style>
+<div class="row">
+  <div class="col-sm-12">
+    <h1>Admin Dashboard</h1>
+  </div>
+  <div class="col-sm-12">
+    Content content! :3 
+    <br>
+    You are logged in as: "{{user.name}}" at {{user.email}}.<br>
+    <a ng-click="logout()">Logout</a>
+    <p>{{logout}}</p>
+  </div>
+</div>
