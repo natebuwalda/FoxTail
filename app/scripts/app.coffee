@@ -86,6 +86,9 @@ angular.module('foxtailArtisanrycomApp', [
         templateUrl: 'partials/admin/dashboard'
         controller: 'AdminDashboardCtrl'
         authenticate: true
+      .when '/product/:id',
+        templateUrl: 'partials/product'
+        controller: 'ProductCtrl'
       .otherwise
         redirectTo: '/'
 
