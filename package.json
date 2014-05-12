@@ -19,7 +19,8 @@
     "passport-local": "~0.1.6",
     "ejs": "~0.8.4",
     "csv": "~0.3.7",
-    "busboy": "~0.2.6"
+    "busboy": "~0.2.6",
+    "temp": "~0.7.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

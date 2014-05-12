@@ -11,9 +11,11 @@ angular.module('foxtailArtisanrycomApp')
       Auth.logout().then ->
         $location.path "/admin/login"
 
-
     $scope.submitFile = ->
       console.log 'submitFile'
       file = $scope.dataFile;
       uploadUrl = '/api/acceptFile';
       fileUpload.uploadFileToUrl(file, uploadUrl);
+
+    $http.get('/api/products/total').success (reply) ->
+      $scope.numProducts = reply.numProducts

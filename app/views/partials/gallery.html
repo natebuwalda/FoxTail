@@ -29,11 +29,13 @@
   <div class="container-responsive container-xs-height">
     <div class="row row-xs-height pew" ng-repeat-start="rows in products | partition:3">
        <div class="col-xs-12 col-md-3 dkblue item col-xs-height" ng-repeat-start="product in rows">
-          <a href="{{product.link}}"><img class="img-responsive" src="{{product.img}}"></a>
-          <a href="{{product.link}}">{{product.title}}</a>
-          <p><em>{{product.img}}</em></p>
+          <a href="{{product.Link}}"><img class="img-responsive" src="{{product['IMG-Thumb']}}"></a>
+          <a href="{{product.Link}}">{{product.title}}</a>
+          <p><em>{{product.ID}}</em></p>
+          <p><em>{{product.Material}} {{product.Title}}</em></p>
+          <p>{{product['Short-Desc']}}</p>
           <p>&nbsp;</p>
-          <p class="price">{{product.price}}</p>    
+          <p class="price">{{product['Reg-Price-Large']}}</p>    
       </div>
       <div class="col-md-1" ng-repeat-end>&nbsp;</div>
     </div>
