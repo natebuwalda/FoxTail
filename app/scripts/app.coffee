@@ -32,6 +32,35 @@ angular.module('foxtailArtisanrycomApp', [
         link: (scope, el, attrs) ->
           el.replaceWith(el.children());
     };
+  .directive 'fileModel', ($parse) ->
+    return {
+        restrict: 'A',
+        link: (scope, element, attrs) ->
+            model = $parse(attrs.fileModel);
+            modelSetter = model.assign;
+            
+            element.bind 'change', ->
+                scope.$apply ->
+                    modelSetter(scope, element[0].files[0]);
+    };
+  .factory('fileUpload', ['$http', ($http) ->
+    new class FileUpload
+      constructor: ->
+        console.log "constructed FileUpload"
+
+      uploadFileToUrl: (file, uploadUrl) ->
+          fd = new FormData();
+          fd.append('file', file);
+          $http.post(uploadUrl, fd, {
+              transformRequest: angular.identity,
+              headers: {'Content-Type': undefined}
+          })
+          .success ->
+            console.log 'file uploaded.'
+          .error ->
+            console.log 'boo'
+          return
+  ])
   .config ($routeProvider, $locationProvider, $httpProvider) ->
     $routeProvider
       .when '/',
