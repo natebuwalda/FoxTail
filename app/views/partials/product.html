@@ -1,1 +1,30 @@
-<p>This is the product view.</p>
+<style>
+.firstblob {
+	color: #ffe5b8;
+	padding: 20px;
+}
+
+.highlight {
+	color: #f65e35;
+	font-weight: bold;
+}
+</style>
+    <div class="flexslider col-xs-12 col-md-9 dkblue r15">
+      <ul class="slides">
+        <li ng-repeat="slide in slides" data-thumb="{{slide}}"><img class="img-responsive center-block" src="{{slide}}"/></li>
+      </ul>
+    </div>
+		<div class="col-xs-12 col-md-9 dkblue r15 blob" style="float: right;">
+  		<h1>{{product.Title}} - {{product.Material}}</h1>
+  		 <p ng-bind-html="product['Long-Desc']"></p>
+  		 <p><span ng-show="product['Sale-Price-Small'] || product['Reg-Price-Small'] || product['Sale-Price-Medium'] || product['Reg-Price-Medium']">Large </span>Price - <span ng-class="product['Sale-Price-Large'] ? 'highlight' : ''">{{product['Sale-Price-Large'] || product['Reg-Price-Large']}}</span><span ng-show="product['Sale-Price-Large']"> (SALE) <span style="text-decoration: line-through;">{{product['Reg-Price-Large']}}</span></p>
+  		 <p ng-show="product['Sale-Price-Medium'] || product['Reg-Price-Medium']">Medium Price - <span ng-class="product['Sale-Price-Medium'] ? 'highlight' : ''">{{product['Sale-Price-Medium'] || product['Reg-Price-Medium']}}</span><span ng-show="product['Sale-Price-Medium']"> (SALE) <span style="text-decoration: line-through;">{{product['Reg-Price-Medium']}}</span></p>
+  		 <p ng-show="product['Sale-Price-Small'] || product['Reg-Price-Small']">Small Price - <span ng-class="product['Sale-Price-Small'] ? 'highlight' : ''">{{product['Sale-Price-Small'] || product['Reg-Price-Small']}}</span><span ng-show="product['Sale-Price-Small']"> (SALE) <span style="text-decoration: line-through;">{{product['Reg-Price-Small']}}</span></p>
+  		 <p ng-show="product['URL-Square']"><a ng-href="{{product['URL-Square']}}">Product Page - Square</a></p>
+  		 <p ng-show="product['URL-Goodsmiths']"><a ng-href="{{product['URL-Goodsmiths']}}">Product Page - Goodsmiths</a></p>
+  		 <p ng-show="product['URL-Etsy']"><a ng-href="{{product['URL-Etsy']}}">Product Page - Etsy</a></p>
+  		 <p style="font-size: 14px; float: right;"><em>Item ID: {{product.ID}}</em></p>
+  	</div>
+  </div>
+</div>
+<!-- <span style="color: white">{{product}}</span -->>
