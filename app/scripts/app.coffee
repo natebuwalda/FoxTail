@@ -5,7 +5,8 @@ angular.module('foxtailArtisanrycomApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'vcRecaptcha'
 ])
   .filter 'partition', ->
     cache = {};
@@ -95,6 +96,9 @@ angular.module('foxtailArtisanrycomApp', [
       .when '/about',
         templateUrl: 'partials/about'
         controller: 'AboutCtrl'
+      .when '/contact',
+        templateUrl: 'partials/contact'
+        controller: 'ContactCtrl'
       .otherwise
         redirectTo: '/'
 

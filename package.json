@@ -20,7 +20,9 @@
     "ejs": "~0.8.4",
     "csv": "~0.3.7",
     "busboy": "~0.2.6",
-    "temp": "~0.7.0"
+    "temp": "~0.7.0",
+    "simple-recaptcha": "0.0.3",
+    "nodemailer": "~0.6.4"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
