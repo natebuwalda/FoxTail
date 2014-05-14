@@ -89,6 +89,12 @@ angular.module('foxtailArtisanrycomApp', [
       .when '/product/:id',
         templateUrl: 'partials/product'
         controller: 'ProductCtrl'
+      .when '/faq',
+        templateUrl: 'partials/faq'
+        controller: 'FaqCtrl'
+      .when '/about',
+        templateUrl: 'partials/about'
+        controller: 'AboutCtrl'
       .otherwise
         redirectTo: '/'
 
