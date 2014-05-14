@@ -17,5 +17,11 @@ angular.module('foxtailArtisanrycomApp')
       uploadUrl = '/api/acceptFile';
       fileUpload.uploadFileToUrl(file, uploadUrl);
 
+    $scope.updateWebsite = ->
+      $http.get('/api/updateWebsite').success (data) ->
+        $scope.message = "Website update done. (#{data})"
+      .error (error, status) ->
+        $scope.message = "Website update failed: #{status} - #{error}"
+
     $http.get('/api/products/total').success (reply) ->
       $scope.numProducts = reply.numProducts
