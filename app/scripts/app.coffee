@@ -99,6 +99,9 @@ angular.module('foxtailArtisanrycomApp', [
       .when '/contact',
         templateUrl: 'partials/contact'
         controller: 'ContactCtrl'
+      .when '/contact-ok',
+        templateUrl: 'partials/contact-ok'
+        controller: 'ContactOkCtrl'
       .otherwise
         redirectTo: '/'
 

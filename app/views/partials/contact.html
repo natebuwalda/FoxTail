@@ -40,22 +40,25 @@
   margin-left: auto;
   margin-right: auto;
 }
+.error {
+  color: #f65e35;
+  font-weight: bold;
+}
 </style>
       <div class="col-xs-12 col-md-9 dkblue first-blob r15 pull-right">
-          <form class="form-feedback" role="form">
+          <form class="form-feedback" role="form" name="form">
             <h2>Contact Us</h2>
             <p>Hurr derp rawr.</p>
-            <p>{{model}}</p>
+            <p ng-show="errormsg" class="error">{{errormsg}}</p>
             <label for="name">Name:</label>
-            <input type="text" class="form-control" placeholder="Your name" name="name" ng-model="name"/>
+            <input type="text" class="form-control" placeholder="Your name" name="name" ng-model="name" required/>
             <label for="email">E-mail:</label>
-            <input type="email" class="form-control" placeholder="Your e-mail address" name="email" ng-model="email"/>
+            <input type="email" class="form-control" placeholder="Your e-mail address" name="email" ng-model="email" required/>
             <label for="message">Message:</label>
-            <textarea name="message" class="form-control" ng-model="message">
+            <textarea name="message" class="form-control" ng-model="message" required>
             </textarea>
-            <div vc-recaptcha key="model">
-            </div>
-          <button class="btn btn-lg btn-primary btn-block" ng-click="sendMessage()">Send Message</button>
+            <div vc-recaptcha key="reCAPTCHA.key"></div>
+          <button class="btn btn-lg btn-primary btn-block" ng-click="sendMessage()" ng-disabled="form.$invalid">Send Message</button>
         </form>
       </div>
     </div> <!-- row -->
