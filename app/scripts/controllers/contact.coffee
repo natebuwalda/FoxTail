@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('foxtailArtisanrycomApp')
-  .controller 'ContactCtrl', ($scope, $http, $timeout, vcRecaptchaService, $location) ->
+  .controller 'ContactCtrl', ['$scope', '$http', '$timeout', 'vcRecaptchaService', '$location', ($scope, $http, $timeout, vcRecaptchaService, $location) ->
     $scope.reCAPTCHA = {key: '6LcAau8SAAAAAHbp1JcrJ2434U5kDAzGRuDpXYPf'}
     
     $scope.sendMessage = ->
@@ -20,4 +20,4 @@ angular.module('foxtailArtisanrycomApp')
         $location.url('/contact-ok')
       .error (wat) ->
         $scope.errormsg = wat
-    
+  ]

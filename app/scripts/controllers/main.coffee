@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('foxtailArtisanrycomApp')
-  .controller 'MainCtrl', ($scope, $http, $timeout) ->
+  .controller 'MainCtrl', ['$scope', '$http', '$timeout', ($scope, $http, $timeout) ->
     $http.get('/api/awesomeThings').success (awesomeThings) ->
       $scope.awesomeThings = awesomeThings
      
@@ -16,3 +16,4 @@ angular.module('foxtailArtisanrycomApp')
 
       console.log $('.flexslider')
     );
+  ]

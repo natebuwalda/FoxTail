@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('foxtailArtisanrycomApp')
-  .controller 'NavbarCtrl', ($scope, $location, Auth) ->
+  .controller 'NavbarCtrl', ['$scope', '$location', 'Auth', ($scope, $location, Auth) ->
     $scope.menu = [
       title: 'Home'
       link: '/'
@@ -16,3 +16,4 @@ angular.module('foxtailArtisanrycomApp')
     
     $scope.isActive = (route) ->
       route is $location.path()
+  ]

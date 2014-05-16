@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('foxtailArtisanrycomApp')
-  .controller 'SignupCtrl', ($scope, Auth, $location) ->
+  .controller 'SignupCtrl', ['$scope', 'Auth', '$location', ($scope, Auth, $location) ->
     $scope.user = {}
     $scope.errors = {}
     
@@ -25,3 +25,4 @@ angular.module('foxtailArtisanrycomApp')
             form[field].$setValidity 'mongoose', false
             $scope.errors[field] = error.type
         )
+  ]

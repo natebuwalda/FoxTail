@@ -1,11 +1,11 @@
 'use strict'
 
 angular.module('foxtailArtisanrycomApp')
-  .controller 'GalleryCtrl', ($scope, $http) ->
+  .controller 'GalleryCtrl', ['$scope', '$http', ($scope, $http) ->
     $http.get('/api/products').success (products) ->
       $scope.products = products
 
     $(->
       $("th, td").iWouldLikeToAbsolutelyPositionThingsInsideOfFrickingTableCellsPlease();
     );
-
+  ]

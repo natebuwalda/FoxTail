@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('foxtailArtisanrycomApp')
-  .controller 'ProductCtrl', ($scope, $http, $routeParams, $timeout) ->
+  .controller 'ProductCtrl', ['$scope', '$http', '$routeParams', '$timeout', ($scope, $http, $routeParams, $timeout) ->
     $scope.id = $routeParams.id
 
     $http.get("/api/product/#{$scope.id}  ").success (info) ->
@@ -29,3 +29,4 @@ angular.module('foxtailArtisanrycomApp')
 
         console.log $('.flexslider')
       );
+  ]

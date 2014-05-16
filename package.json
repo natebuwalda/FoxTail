@@ -22,7 +22,8 @@
     "busboy": "~0.2.6",
     "temp": "~0.7.0",
     "simple-recaptcha": "0.0.3",
-    "nodemailer": "~0.6.4"
+    "nodemailer": "~0.6.4",
+    "glob": "~3.2.9"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

@@ -8,7 +8,7 @@ angular.module('foxtailArtisanrycomApp', [
   'ngRoute',
   'vcRecaptcha'
 ])
-  .filter 'partition', ->
+  .filter('partition', ->
     cache = {};
     filter = (arr, size) ->
       if !arr 
@@ -26,14 +26,16 @@ angular.module('foxtailArtisanrycomApp', [
       return newArr;
 
     return filter;
-  .directive 'includeReplace', ->
+  )
+  .directive('includeReplace', ->
     return {
         require: 'ngInclude',
         #restrict: 'A', /* optional */
         link: (scope, el, attrs) ->
           el.replaceWith(el.children());
     };
-  .directive 'fileModel', ($parse) ->
+  )
+  .directive('fileModel', ['$parse', ($parse) ->
     return {
         restrict: 'A',
         link: (scope, element, attrs) ->
@@ -44,6 +46,7 @@ angular.module('foxtailArtisanrycomApp', [
                 scope.$apply ->
                     modelSetter(scope, element[0].files[0]);
     };
+  ])
   .factory('fileUpload', ['$http', ($http) ->
     new class FileUpload
       constructor: ->
@@ -62,7 +65,7 @@ angular.module('foxtailArtisanrycomApp', [
             console.log 'boo'
           return
   ])
-  .config ($routeProvider, $locationProvider, $httpProvider) ->
+  .config(['$routeProvider', '$locationProvider', '$httpProvider', ($routeProvider, $locationProvider, $httpProvider) ->
     $routeProvider
       .when '/',
         templateUrl: 'partials/main'
@@ -116,8 +119,10 @@ angular.module('foxtailArtisanrycomApp', [
         else
           $q.reject response
     ]
-  .run ($rootScope, $location, Auth) ->
+  ])
+  .run(['$rootScope', '$location', 'Auth', ($rootScope, $location, Auth) ->
     
     # Redirect to login if route requires auth and you're not logged in
     $rootScope.$on '$routeChangeStart', (event, next) ->
       $location.path '/admin/login'  if next.authenticate and not Auth.isLoggedIn()
+  ])

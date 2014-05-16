@@ -7,3 +7,6 @@ heroku
 /views
 dist
 foxtail*key*
+app/scripts/app.js
+app/scripts/**/*.js
+logs/

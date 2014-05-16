@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('foxtailArtisanrycomApp')
-  .controller 'LoginCtrl', ($scope, Auth, $location) ->
+  .controller 'LoginCtrl', ['$scope', 'Auth', '$location', ($scope, Auth, $location) ->
     $scope.user = {}
     $scope.errors = {}
 
@@ -19,3 +19,4 @@ angular.module('foxtailArtisanrycomApp')
         .catch (err) ->
           err = err.data;
           $scope.errors.other = err.message;
+  ]
