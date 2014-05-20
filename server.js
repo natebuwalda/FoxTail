@@ -1,9 +1,11 @@
 'use strict';
 
 var express = require('express'),
+    http = require('http'),
     path = require('path'),
     fs = require('fs'),
-    mongoose = require('mongoose');
+    mongoose = require('mongoose'),
+    SocketIO = require('socket.io');
 
 /**
  * Main application file
@@ -31,11 +33,22 @@ var passport = require('./lib/config/passport');
 
 // Setup Express
 var app = express();
+var server = http.createServer(app);
+var io = SocketIO.listen(server);
+app.use(function (req, res, next) {
+  req.io = io;
+  req.mode = app.get('env');
+  next();
+});
 require('./lib/config/express')(app);
 require('./lib/routes')(app);
+io.sockets.on('connection', function (socket) {
+  console.log('-- WS client connected.');
+  socket.emit('console', 'Connection established');
+});
 
 // Start server
-app.listen(config.port, config.ip, function () {
+server.listen(config.port, config.ip, function () {
   console.log('Express server listening on %s:%d, in %s mode', config.ip, config.port, app.get('env'));
 });
 

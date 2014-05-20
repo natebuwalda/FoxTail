@@ -6,7 +6,8 @@ angular.module('foxtailArtisanrycomApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'vcRecaptcha'
+  'vcRecaptcha',
+  'btford.socket-io'
 ])
   .filter('partition', ->
     cache = {};
@@ -52,7 +53,7 @@ angular.module('foxtailArtisanrycomApp', [
       constructor: ->
         console.log "constructed FileUpload"
 
-      uploadFileToUrl: (file, uploadUrl) ->
+      uploadFileToUrl: (file, uploadUrl, cb) ->
           fd = new FormData();
           fd.append('file', file);
           $http.post(uploadUrl, fd, {
@@ -61,10 +62,15 @@ angular.module('foxtailArtisanrycomApp', [
           })
           .success ->
             console.log 'file uploaded.'
-          .error ->
+            cb(null, 'file uploaded');
+          .error (data) ->
             console.log 'boo'
+            cb(data)
           return
   ])
+  .factory('adminBidiSocket', (socketFactory) ->
+    return socketFactory();
+  )
   .config(['$routeProvider', '$locationProvider', '$httpProvider', ($routeProvider, $locationProvider, $httpProvider) ->
     $routeProvider
       .when '/',
