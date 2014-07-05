@@ -2,10 +2,10 @@
 
 angular.module('foxtailArtisanrycomApp')
   .controller 'AdminDashboardCtrl', ($scope, $http, $location, Auth, fileUpload, adminBidiSocket) ->
-    $scope.processing = null
-    $scope.updating = null
-    $scope.rebuilding = null
-    $scope.restarting = null
+    $scope.processing = false
+    $scope.updating = false
+    $scope.rebuilding = false
+    $scope.restarting = false
     $scope.console = ''
     
     $http.get('/api/users/me').success (user) ->
@@ -22,7 +22,7 @@ angular.module('foxtailArtisanrycomApp')
       uploadUrl = '/api/acceptFile';
       fileUpload.uploadFileToUrl(file, uploadUrl, (err, msg) ->
         $scope.message = ''
-        $scope.processing = null
+        $scope.processing = true
         $scope.message = 'ERROR: ' if err?
         $scope.message = msg
       );
@@ -30,38 +30,45 @@ angular.module('foxtailArtisanrycomApp')
     $scope.updateWebsite = ->
       $scope.updating = true
       $http.get('/api/updateWebsite').success (data) ->
-        $scope.message = "Website update done. (#{data})"
-        $scope.updating = null
+        $scope.message = "Website update command submitted. (#{data})"
       .error (error, status) ->
         $scope.message = "Website update failed: #{status} - #{error}"
-        $scope.updating = null
+        $scope.updating = false
 
     $scope.buildWebsite = ->
       $scope.rebuilding = true
       $http.get('/api/buildWebsite').success (data) ->
-        $scope.message = "Website build done. (#{data})"
-        $scope.rebuilding = null
+        $scope.message = "Website build command submitted. (#{data})"
       .error (error, status) ->
         $scope.message = "Website build failed: #{status} - #{error}"
-        $scope.rebuilding = null
+        $scope.rebuilding = false
 
     $scope.stopWebsite = ->
       $scope.restarting = true
       $http.get('/api/stopWebsite').success (data) ->
         $scope.message = "Website stopping... (#{data})"
-        $scope.restarting = null
-      .error (error, status) ->
+        .error (error, status) ->
         $scope.message = "Website stop failed: #{status} - #{error}"
-        $scope.restarting = null
+        $scope.restarting = false
 
     adminBidiSocket.on 'console', (data, cb) ->
       console.log "adminBidiSocket: #{data}"
       $scope.console += data if typeof data != 'undefined';
+      $('#console').scrollTop($('#console')[0].scrollHeight);
       cb() if typeof cb == "function"
+
+    adminBidiSocket.on 'status', (data, cb) ->
+      console.log "adminBidiSocket/status: #{data}"
+      console.dir(data)
+      $scope.$apply ->
+        $scope[data.mech] = data.set
+        direction = if data.set == true then "started" else "finished"
+        $scope.message = "Website #{data.mech} #{direction}."
+      cb() if typeof cb == "function"      
 
     # $scope.$on 'socket:console', (ev, data) ->
     #   console.log "socket:console / #{ev} / #{data}"
     #   $scope.console += data;
 
     $http.get('/api/products/total').success (reply) ->
-      $scope.numProducts = reply.numProducts
+      $scope.numProducts = reply.numProductss

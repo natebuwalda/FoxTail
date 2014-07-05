@@ -10,3 +10,4 @@ foxtail*key*
 app/scripts/app.js
 app/scripts/**/*.js
 logs/
+*.pid

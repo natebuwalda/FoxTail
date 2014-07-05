@@ -44,7 +44,8 @@ require('./lib/config/express')(app);
 require('./lib/routes')(app);
 io.sockets.on('connection', function (socket) {
   console.log('-- WS client connected.');
-  socket.emit('console', 'Connection established');
+  socket.emit('console', 'Connection established\n');
+  socket.emit('status', {mech: 'restarting', set: false}); // This could be buggy if multiple people use the admin interface at the same time since it will falsely set restarting to false if another user simply connects.
 });
 
 // Start server

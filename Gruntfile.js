@@ -8,6 +8,7 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
+  var fs = require('fs');
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
@@ -446,10 +447,21 @@ module.exports = function (grunt) {
     this.async();
   });
 
+  grunt.registerTask('deathnote', 'Sign my own death warrant by giving my own name', function () {
+    fs.writeFileSync('./prod.pid', process.pid);
+    return true;
+  });
+
+  grunt.registerTask('kira', 'Write the name in the notebook', function () {
+    var pid = parseInt(fs.readFileSync('./prod.pid'));
+    process.kill(pid);
+    return true;
+  });
+
   grunt.registerTask('serve', function (target) {
     if (target === 'dist') {
       //return grunt.task.run(['build', 'express:prod', 'open', 'express-keepalive']);
-      return grunt.task.run(['express:prod', 'express-keepalive']);
+      return grunt.task.run(['deathnote','express:prod', 'express-keepalive']);
     }
 
     if (target === 'debug') {
