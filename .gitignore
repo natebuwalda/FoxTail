@@ -11,3 +11,4 @@ app/scripts/app.js
 app/scripts/**/*.js
 logs/
 *.pid
+/.project
